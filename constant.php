@@ -20,9 +20,17 @@
 // echo __FILE__;
 
 
-function coba()
+// function coba()
+// {
+//   return __FUNCTION__;
+// }
+
+// echo coba();
+
+class Coba
 {
-  return __FUNCTION__;
+  public $kelas = __CLASS__;
 }
 
-echo coba();
+$obj = new Coba;
+echo $obj->kelas;
