@@ -18,11 +18,11 @@
 
 class Contoh
 {
-  public $angka = 1;
+  public static $angka = 1;
 
   public function halo()
   {
-    return "halo " . $this->angka++ . " kali.<br>";
+    return "halo " . self::$angka++ . " kali.<br>";
   }
 }
 
